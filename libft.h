@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/21 12:59:21 by loda-sil          #+#    #+#             */
-/*   Updated: 2025/07/21 16:50:50 by loda-sil         ###   ########.fr       */
+/*   Created: 2025/07/22 11:12:35 by loda-sil          #+#    #+#             */
+/*   Updated: 2025/07/22 16:27:48 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,8 @@
 #include <stdlib.h>
 
 int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
 
 #endif
+
