@@ -1,6 +1,8 @@
 NAME = libft.a
 
-SRCS = ft_isalpha.c
+SRCS = ft_isalpha.c \
+		ft_isdigit.c
+		ft_isalnum.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -9,9 +11,6 @@ RM = rm -f
 AR = ar rcs
 
 CFLAGS = -Wall -Wextra -Werror -g
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	$(AR) $@ $^
