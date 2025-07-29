@@ -6,7 +6,7 @@
 /*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 14:51:19 by loda-sil          #+#    #+#             */
-/*   Updated: 2025/07/24 19:08:54 by loda-sil         ###   ########.fr       */
+/*   Updated: 2025/07/29 12:40:26 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*ptr;
+	unsigned char	*ptr;
 
-	ptr = s;
+	ptr = (unsigned char *)s;
 	while (n--)
 		*ptr++ = '\0';
 }
