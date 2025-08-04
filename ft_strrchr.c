@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 13:03:48 by loena             #+#    #+#             */
-/*   Updated: 2025/08/01 15:15:52 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/04 16:07:35 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	int i;
+	int	i;
 
 	i = ft_strlen(s);
-	while (i >= 0 && s[i] != c)
+	while (i >= 0 && s[i] != (char)c)
 		i--;
-	if(i < 0)
+	if (i < 0)
 		return (NULL);
 	return ((char *)&s[i]);
 }
