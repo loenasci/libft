@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 13:56:35 by loena             #+#    #+#             */
-/*   Updated: 2025/08/02 14:27:58 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/04 15:22:50 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	str = (unsigned char *)s;
 	while (n--)
 	{
-		if (*str == c)
+		if (*str == (unsigned char)c)
 			return ((void *)str);
 		str++;
 	}
