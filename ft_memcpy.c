@@ -6,7 +6,7 @@
 /*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:30:18 by loda-sil          #+#    #+#             */
-/*   Updated: 2025/07/28 12:27:53 by loda-sil         ###   ########.fr       */
+/*   Updated: 2025/08/04 16:05:23 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		*ptr_dest++ = *ptr_src++;
 	return (dest);
 }
-
