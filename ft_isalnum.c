@@ -6,7 +6,7 @@
 /*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 16:25:48 by loda-sil          #+#    #+#             */
-/*   Updated: 2025/07/22 16:28:51 by loda-sil         ###   ########.fr       */
+/*   Updated: 2025/07/29 17:17:19 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
-		return (c);
-	return (0);
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
