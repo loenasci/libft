@@ -6,7 +6,7 @@
 /*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/03 22:19:17 by loena             #+#    #+#             */
-/*   Updated: 2025/08/04 16:06:41 by loda-sil         ###   ########.fr       */
+/*   Updated: 2025/08/05 12:00:39 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (nmemb != 0 && size > (size_t)-1 / nmemb)
 		return (NULL);
 	total = nmemb * size;
-	ptr = malloc(total);
+	ptr = (unsigned char *)malloc(total);
 	if (!ptr)
 		return (NULL);
 	while (total--)
