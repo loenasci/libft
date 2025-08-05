@@ -6,7 +6,7 @@
 /*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:30:18 by loda-sil          #+#    #+#             */
-/*   Updated: 2025/08/05 10:58:38 by loda-sil         ###   ########.fr       */
+/*   Updated: 2025/08/05 16:07:32 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char		*ptr_dest;
 	unsigned const char	*ptr_src;
-	
+
 	if (n == 0 || (!dest && !src))
 		return (dest);
 	ptr_dest = (unsigned char *)dest;
