@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 08:59:42 by loena             #+#    #+#             */
-/*   Updated: 2025/08/11 09:56:14 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/11 14:52:36 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	i = 0;
 	if (!s || !f)
 		return ;
-	
 	while (s[i])
 	{
 		f(i, &s[i]);
