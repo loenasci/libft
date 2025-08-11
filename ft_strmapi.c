@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 15:40:13 by loena             #+#    #+#             */
-/*   Updated: 2025/08/10 16:18:06 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/11 14:53:54 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char *result;
-	size_t len;
-	size_t i;
-	
+	char	*result;
+	size_t	len;
+	size_t	i;
+
 	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);
