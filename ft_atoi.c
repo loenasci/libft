@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 17:35:03 by loena             #+#    #+#             */
-/*   Updated: 2025/08/03 22:17:22 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/11 15:57:41 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,7 @@ int	ft_atoi(const char *nptr)
 		return (0);
 	while (ft_isdigit(*nptr))
 	{
-		nbr *= 10;
-		nbr += *nptr - 48;
+		nbr = nbr * 10 + (*nptr - 48);
 		nptr++;
 	}
 	return (sign * (int)nbr);
