@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 10:24:13 by loena             #+#    #+#             */
-/*   Updated: 2025/08/11 10:28:59 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/11 14:53:22 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int i;
-
-	if(!s)
+	if (!s)
 		return ;
-	i = 0;
 	write(fd, s, ft_strlen(s));
 }
-
