@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: loda-sil <loda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 10:38:56 by loena             #+#    #+#             */
-/*   Updated: 2025/08/10 11:46:33 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/11 14:53:02 by loda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	count_digits(int n)
 {
-	int 		count;
+	int			count;
 	long int	nbr;
 
 	if (n == 0)
@@ -51,7 +51,7 @@ char	*ft_itoa(int n)
 	if (nb < 0)
 	{
 		str[0] = '-';
-		nb = nb * -1;
+		nb = -nb;
 	}
 	digits -= 1;
 	while (nb > 0)
