@@ -43,7 +43,6 @@ AR = ar rcs
 
 CFLAGS = -Wall -Wextra -Werror -g
 
-# Regra padrão (também implícita)
 %.o : %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
