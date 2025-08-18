@@ -71,7 +71,10 @@ To compile the library:
 ```bash
 make
 ```
-
+To compile the library including bonus (linked list) functions:
+```bash
+make bonus
+```
 To use the library in your programs:
 ```bash
 gcc your_program.c libft.a -o your_program
