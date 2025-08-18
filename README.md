@@ -25,7 +25,13 @@ All functions are prefixed with `ft_` to distinguish them from their standard li
 - **`ft_strrchr`** - Locates last occurrence of character in string
 - **`ft_strncmp`** - Compares strings up to n characters
 - **`ft_strnstr`** - Locates substring within string (with size limit)
-- **`ft_atoi`** - Converts string to integer
+- **`ft_strdup`** - Duplicates a string
+- **`ft_substr`** - Extracts substring from string
+- **`ft_strjoin`** - Concatenates two strings into a new string
+- **`ft_strtrim`** - Trims characters from the beginning and end of a string
+- **`ft_split`** - Splits a string into an array of strings using a delimiter
+- **`ft_strmapi`** - Applies a function to each character of a string, returns new string
+- **`ft_striteri`** - Applies a function to each character of a string (in place)
 
 ### Memory Functions
 - **`ft_memset`** - Fills memory with a constant byte
@@ -37,6 +43,27 @@ All functions are prefixed with `ft_` to distinguish them from their standard li
 
 ### Memory Allocation Functions
 - **`ft_calloc`** - Allocates and zeros memory for array
+
+### Conversion Functions
+- **`ft_atoi`** - Converts string to integer
+- **`ft_itoa`** - Converts integer to string
+
+### File Descriptor Output Functions
+- **`ft_putchar_fd`** - Writes a character to a file descriptor
+- **`ft_putstr_fd`** - Writes a string to a file descriptor
+- **`ft_putendl_fd`** - Writes a string followed by a newline to a file descriptor
+- **`ft_putnbr_fd`** - Writes an integer to a file descriptor
+
+### Linked List Functions
+- **`ft_lstnew`** - Creates a new list node
+- **`ft_lstadd_front`** - Adds a node at the beginning of the list
+- **`ft_lstadd_back`** - Adds a node at the end of the list
+- **`ft_lstsize`** - Counts the number of nodes in the list
+- **`ft_lstlast`** - Returns the last node of the list
+- **`ft_lstdelone`** - Deletes and frees a single node
+- **`ft_lstclear`** - Deletes and frees all nodes of the list
+- **`ft_lstiter`** - Applies a function to each node's content
+- **`ft_lstmap`** - Creates a new list by applying a function to each node's content
 
 ## Compilation
 
