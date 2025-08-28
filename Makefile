@@ -48,6 +48,8 @@ BONUS = ft_lstnew.c \
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(BONUS:.c=.o)
 
+HEADER = libft.h
+
 CC = cc
 RM = rm -f
 AR = ar rcs
@@ -57,7 +59,7 @@ CFLAGS = -Wall -Wextra -Werror -g
 %.o : %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(HEADER)
 	$(AR) $@ $^
 
 all: $(NAME)
