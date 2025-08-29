@@ -6,7 +6,7 @@
 /*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 19:28:30 by loena             #+#    #+#             */
-/*   Updated: 2025/08/18 15:17:53 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/29 12:47:51 by loena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*node;
-	
+
 	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;

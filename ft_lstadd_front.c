@@ -6,7 +6,7 @@
 /*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 13:36:39 by loena             #+#    #+#             */
-/*   Updated: 2025/08/18 15:17:42 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/29 12:44:36 by loena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
-		return;
+		return ;
 	new->next = *lst;
 	*lst = new;
 }

@@ -6,7 +6,7 @@
 /*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 11:12:35 by loda-sil          #+#    #+#             */
-/*   Updated: 2025/08/18 17:59:27 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/29 12:45:48 by loena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 typedef struct s_list
 {
-	void	*content;
-	struct	s_list *next;
+	void			*content;
+	struct s_list	*next;
 }			t_list;
 
 /*

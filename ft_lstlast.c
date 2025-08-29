@@ -6,7 +6,7 @@
 /*   By: loena <loena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 13:34:26 by loena             #+#    #+#             */
-/*   Updated: 2025/08/15 13:45:00 by loena            ###   ########.fr       */
+/*   Updated: 2025/08/29 12:46:59 by loena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	if(!lst)
+	if (!lst)
 		return (NULL);
-	while(lst->next)
+	while (lst->next)
 		lst = lst->next;
 	return (lst);
 }
